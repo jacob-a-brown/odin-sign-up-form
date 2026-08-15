@@ -2,3 +2,62 @@
     --noto-sans-font: "Noto Sans";
     --montserrat-font: "Monteserrat";
 }
+
+html, body {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+#container{
+    display: flex;
+    justify-content: center;
+    height: 100vh;
+    width: 100%;
+}
+
+#welcome-image-container{
+    flex: 1 1 40%;
+    height: 100%;
+    display: flex;
+}
+
+#welcome-image{
+    height: 100%;
+    width: 100%;
+    justify-self: center;
+    align-self: center;
+}
+
+#welcome-form-container{
+    flex: 1 1 60%;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+.gray-background {
+    flex: 1 1 33%;
+    background-color: rgb(236, 231, 231);
+}
+
+#form-input {
+    flex: 1 1 33%;
+    box-shadow: 0 1px 6px 0px black;
+    position: relative;
+    z-index: 1;
+}
+
+#welcome-message {
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-end;
+}
+
+#welcome-message > p {
+    font-family: var(--noto-sans-font);
+    font-weight: bold;
+    padding-left: 1rem;
+    padding-right: 8rem;
+}
