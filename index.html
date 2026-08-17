@@ -26,10 +26,44 @@
                 <p>You <em>know</em> you want to.</p>
             </div>
             <div id="form-input">
+                <p>
+                    Let's do this!
+                </p>
+                <form action="#" method="post" id="my-form">
+                    <div class="input-label-container">
+                        <label for="first-name">FIRST NAME</label>
+                        <input id="first-name" type="text" required>
+                    </div>
+
+                    <div class="input-label-container">
+                        <label for="last-name">LAST NAME</label>
+                        <input id="last-name" type="text" required>
+                    </div>
+
+                    <div class="input-label-container">
+                        <label for="user-email">EMAIL</label>
+                        <input id="user-email" type="email" required>
+                    </div>
+
+                    <div class="input-label-container">
+                        <label for="user-phone-number">PHONE NUMBER</label>
+                        <input id="user-phone-number" type="tel" pattern="[0-9]{3}-[0-9]{3}-[0-9]{4}" required>
+                    </div>
+
+                    <div class="input-label-container">
+                        <label for="user-password">PASSWORD</label>
+                        <input id="user-password" type="password" required>
+                    </div>
+
+                    <div class="input-label-container">
+                        <label for="confirm-user-password">CONFIRM PASSWORD</label>
+                        <input id="confirm-user-password" type="password" required>
+                    </div>
+                </form>
 
             </div>
             <div class="gray-background" id="form-buttons">
-
+                <button type="submit" form="my-form">Create Account</button>
             </div>
 
         </div>

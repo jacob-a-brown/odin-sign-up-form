@@ -61,3 +61,45 @@ html, body {
     padding-left: 1rem;
     padding-right: 8rem;
 }
+
+#form-input > p{
+    font-family: var(--montserrat-font);
+    font-weight: bold;
+    padding-left: 1rem;
+    padding-right: 8rem;
+}
+
+form {
+    display: flex;
+    flex-wrap: wrap;
+    width: 50rem;
+}
+
+.input-label-container {
+    display: flex;
+    flex-direction: column;
+    padding-left: 1rem;
+    padding-top: 1rem;
+    width: 45%;    
+}
+
+button {
+    margin-left: 1rem;
+    margin-top: 1rem;
+    padding: 0.5rem 0.5rem;
+    background-color: #596D48;
+    color: white;
+    font-weight: bold;
+}
+
+input:focus{
+    border: 1px solid blue;
+}
+
+input:user-invalid{
+    border: 2px solid red;
+}
+
+input:user-valid{
+    border: 2px solid green;
+}
