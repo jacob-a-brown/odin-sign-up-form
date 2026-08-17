@@ -17,7 +17,7 @@ html, body {
 }
 
 #welcome-image-container{
-    flex: 1 1 40%;
+    width: 40vw;
     height: 100%;
     display: flex;
 }
@@ -30,23 +30,11 @@ html, body {
 }
 
 #welcome-form-container{
-    flex: 1 1 60%;
+    width: 60vw;
     height: 100%;
     display: flex;
     flex-direction: column;
     justify-content: center;
-}
-
-.gray-background {
-    flex: 1 1 33%;
-    background-color: rgb(236, 231, 231);
-}
-
-#form-input {
-    flex: 1 1 33%;
-    box-shadow: 0 1px 6px 0px black;
-    position: relative;
-    z-index: 1;
 }
 
 #welcome-message {
@@ -62,25 +50,43 @@ html, body {
     padding-right: 8rem;
 }
 
-#form-input > p{
-    font-family: var(--montserrat-font);
-    font-weight: bold;
-    padding-left: 1rem;
-    padding-right: 8rem;
+.gray-background {
+    flex: 1 1 auto;
+    background-color: rgb(236, 231, 231);
+}
+
+#form-input {
+    flex-grow: 1;
+    flex-shrink: 1;
+    flex-basis: 33%;
+    box-shadow: 0 1px 6px 0px black;
+    position: relative;
+    z-index: 1;
+    overflow: auto;
 }
 
 form {
+    height: 100%;
     display: flex;
     flex-wrap: wrap;
-    width: 50rem;
+    justify-content: flex-start;
+    align-content: space-evenly;
+    padding-left: 5%;
+    gap: 5%
+}
+
+form > p{
+    font-family: var(--montserrat-font);
+    font-weight: bold;
+    width: 100%;
 }
 
 .input-label-container {
     display: flex;
     flex-direction: column;
-    padding-left: 1rem;
-    padding-top: 1rem;
-    width: 45%;    
+    padding-bottom: 1rem;
+    width: 40%;   
+    min-width: 200px;
 }
 
 button {
